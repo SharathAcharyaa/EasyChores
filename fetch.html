@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="fetch.css">
+    <title>Fetch Expenses</title>
+</head>
+<body> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Easy Chore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="rupee.html">Expense</a> 
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="fetch.html">Fetch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="logout.html">Logout</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h1>Fetch Expenses</h1>
+        <label for="fetch-date">Select Date:</label>
+        <input type="date" id="fetch-date" required>
+        
+        <button id="fetch-button">Fetch Expenses</button>
+        <button id="view-button">View Expenses</button> <!-- View Expenses button -->
+        
+        <div id="expense-list"></div>
+    </div>
+    <script src="fetch.js"></script>
+</body> 
+</html>

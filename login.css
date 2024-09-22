@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1f1c2c, #d97dfb);
+    color: white;
+}
+
+.container {
+    max-width: 500px; /* Consistent width */
+    margin: auto;
+    padding: 150px 20px; /* Adjusted padding for better responsiveness */
+}
+
+.card {
+    background-color: #333; /* Match card background */
+    border-radius: 10px; /* Increased radius for softer corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    padding: 30px; /* Padding inside the card */
+}
+
+.form-title {
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 25px; /* Increased margin for better spacing */
+    color: #fff; /* Match the text color */
+    text-align: center; /* Center align title */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+} 
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px; /* Adjusted margin for spacing */
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #007bff; /* Keep icon color consistent */
+}
+
+.input-group input {
+    width: 100%; /* Make inputs full-width for better scaling */
+    padding: 10px 35px; /* Adjusted padding */
+    border: 1px solid #007bff; /* Consistent border color */
+    border-radius: 5px;
+    background-color: #555; /* Match input background */
+    color: white; /* Input text color */
+    height: 45px; /* Set a fixed height for input fields */
+}
+
+.btn {
+    background-color: #007bff; /* Button color */ 
+    color: white; /* Button text color */
+    width: 100%;
+    padding: 12px; /* Adjusted padding for size */
+    border-radius: 5px;
+    margin-top: 15px; /* Space above the button */
+    font-size: 16px; /* Increased font size for buttons */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0; /* Increased margin for better spacing */
+}
+
+.icons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links {
+    text-align: center;
+}
+
+.links .btn-link {
+    padding: 10;
+    color: #ffffff; /* Link color */
+}
+
+.links .btn-link:hover {
+    background-color: #0056b3;
+}
+
+.btn-home {
+    margin-top: 15px; /* Space above the home button */ 
+    align-items: center;
+    padding: 5px; /* Adjusted padding for consistency */
+    background-color: #048aff; /* Green color for Home button */
+    color: white; /* Text color for Home button */
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-home:hover {
+    background-color: #0095ff; /* Darker green on hover */
+}
+
+/* For desktops and larger laptops */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 600px; /* Expand container for larger screens */
+        padding: 150px 50px; /* Add more padding for large displays */
+    }
+
+    .card {
+        padding: 40px; /* Increase card padding for large displays */
+    }
+
+    .form-title {
+        font-size: 32px; /* Increase title font size */
+    }
+
+    .btn {
+        font-size: 18px; /* Increase button font size */
+        padding: 15px; /* Increase padding for larger buttons */
+    }
+}
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+    body {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  
+    .container {
+      max-width: 450px; /* Adjust width for smaller devices */
+      padding: 150px 20px; /* Reduce padding to fit the screen */
+    }
+  
+    .card {
+      padding: 20px; /* Decrease padding inside the card */
+    }
+  
+    .form-title {
+      font-size: 24px; /* Reduce title size */
+      margin-bottom: 20px; /* Adjust spacing */
+    }
+  
+    .input-group input {
+      padding: 10px 30px; /* Adjust padding */
+      height: 40px; /* Slightly reduce input height */
+    }
+  
+    .btn {
+      font-size: 14px; /* Reduce button font size */
+      padding: 10px; /* Adjust button padding */
+    }
+  
+    .or {
+      margin: 15px 0; /* Reduce spacing for smaller screens */
+    }
+  
+    .btn-home {
+      padding: 8px; /* Adjust padding for Home button */
+    }
+}
+  
+/* For mobile phones */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Further reduce font size for mobile */
+    }
+  
+    .container {
+      max-width: 350px; /* Reduce container width for mobile */
+      padding: 100px 15px; /* Adjust padding for mobile devices */
+    }
+  
+    .card {
+      padding: 15px; /* Reduce padding inside the card */
+    }
+  
+    .form-title {
+      font-size: 20px; /* Reduce title font size for mobile */
+      margin-bottom: 15px; /* Adjust margin */
+    }
+  
+    .input-group input {
+      padding: 10px 25px; /* Adjust padding */
+      height: 35px; /* Reduce input height */
+    }
+  
+    .btn {
+      font-size: 14px; /* Reduce font size for buttons */
+      padding: 10px; /* Adjust button padding */
+    }
+  
+    .or {
+      margin: 10px 0; /* Reduce margin for smaller screens */
+    }
+  
+    .btn-home {
+      padding: 8px; /* Reduce padding for home button */
+      font-size: 14px; /* Reduce font size for home button */
+    }
+  
+    .icons, .links {
+      margin-bottom: 15px; /* Adjust margin */
+    }
+}
+
+/* For very small mobile phones (older models) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Further reduce font size for very small devices */
+    }
+
+    .container {
+        max-width: 300px; /* Reduce width for very small screens */
+        padding: 80px 10px; /* Adjust padding for small devices */
+    }
+
+    .card {
+        padding: 10px; /* Further reduce card padding */
+    }
+
+    .form-title {
+        font-size: 18px; /* Further reduce title size */
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+
+    .input-group input {
+        padding: 8px 20px; /* Adjust padding */
+        height: 30px; /* Further reduce input height */
+    }
+
+    .btn {
+        font-size: 12px; /* Smaller button font size */
+        padding: 8px; /* Adjust button padding */
+    }
+
+    .btn-home {
+        padding: 5px; /* Adjust padding for the home button */
+        font-size: 12px; /* Reduce home button font size */
+    }
+}

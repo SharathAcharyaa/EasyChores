@@ -1,0 +1,61 @@
+/* styles.css */
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #d97dfb); /* Black background */
+    color: white; /* White text color for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text alignment */
+  }
+  
+  .container {
+    width: 500px; /* Maintain the same width */
+    max-width: 100%; /* Ensure it doesn’t exceed the viewport width */
+    padding: 10px; /* Reduced padding */
+  }
+  
+  h1 {
+    margin-bottom: 10px; /* Reduced space between heading and the form */
+    font-size: 22px; /* Slightly smaller heading font size */
+  }
+  
+  .card {
+    background-color: #333; /* Dark background for the card */
+    color: white; /* White text color for the card */
+    border: 1px solid #444; /* Slight border for better visibility */
+    padding: 15px; /* Reduced padding inside the card */
+    margin: auto; /* Center the card horizontally */
+  }
+  
+  .card-body {
+    padding: 10px; /* Reduced padding inside the card body */
+  }
+  
+  .form-control {
+    background-color: #555; /* Darker background for input fields */
+    color: white; /* White text for input fields */
+    border: 1px solid #666; /* Border color for input fields */
+    font-size: 14px; /* Slightly smaller font size for input fields */
+    margin-bottom: 10px; /* Space between input fields */
+  }
+  
+  .form-control:focus {
+    background-color: #666; /* Darker focus background */
+    border-color: #777; /* Border color on focus */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff; /* Border color for the button */
+    font-size: 14px; /* Slightly smaller font size for the button */
+    padding: 8px 16px; /* Reduced padding for the button */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+    border-color: #004085; /* Border color on hover */
+  }

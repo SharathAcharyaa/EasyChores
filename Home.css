@@ -1,0 +1,91 @@
+/* Home.css */
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #d97dfb); /* Black background */
+    color: white; /* White text color for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    margin-bottom: 20px; /* Space below the navbar */
+  }
+  
+  .container {
+    max-width: 600px; /* Increased max width for the form */
+  }
+  
+  .card {
+    background-color: #333; /* Dark background for the card */
+    color: white; /* White text color for the card */
+    border: 1px solid #444; /* Slight border for better visibility */
+    padding: 15px; /* Padding inside the card */
+  }
+  
+  .form-control {
+    background-color: #555; /* Darker background for input fields */
+    color: white; /* White text for input fields */
+    border: 1px solid #666; /* Border color for input fields */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+  }
+  
+  /* For tablets and small laptops */
+  @media (max-width: 1024px) {
+    body {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  
+    .container {
+      max-width: 500px; /* Adjust max width of the form for tablets */
+      padding: 10px;    /* Add some padding */
+    }
+  
+    .navbar {
+      margin-bottom: 15px; /* Slightly reduce the space below the navbar */
+    }
+  
+    .card {
+      padding: 10px; /* Decrease padding for better spacing on smaller screens */
+    }
+  
+    .btn-primary {
+      font-size: 14px; /* Reduce button text size */
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Further reduce font size for mobile */
+    }
+  
+    .container {
+      max-width: 90%; /* Use a percentage-based width for mobile */
+      padding: 5px;   /* Less padding on mobile */
+    }
+  
+    .card {
+      padding: 8px; /* Reduce padding inside the card */
+    }
+  
+    .form-control {
+      font-size: 14px; /* Reduce input field font size */
+    }
+  
+    .btn-primary {
+      width: 100%; /* Make buttons take full width on mobile */
+      font-size: 13px; /* Further reduce button text size */
+    }
+    
+    .navbar {
+      margin-bottom: 10px; /* Reduce space below the navbar */
+    }
+  }
+   

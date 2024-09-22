@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Use a brand-specific font if applicable */
+    margin: 0;
+    padding: 0;
+    background-color: #1f1c2c; /* Dark background for brand consistency */
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #121212; /* Brand color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #d97dfb; /* Accent color for hover effect */
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px); /* Adjust for navbar height */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem; /* Adjusted font size for consistency */
+    margin-bottom: 20px;
+    color: white; /* Consistent text color */
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem; /* Adjusted font size for buttons */
+    color: white;
+    background-color: #007bff; /* Primary brand color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+    body {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  
+    .navbar a {
+      font-size: 0.9rem; /* Slightly reduce font size for navigation links */
+      margin: 0 10px; /* Reduce margin between navbar links */
+    }
+  
+    h1 {
+      font-size: 2rem; /* Decrease the size of headings */
+    }
+  
+    .btn {
+      font-size: 0.9rem; /* Reduce button font size */
+      padding: 8px 15px; /* Adjust padding for buttons */
+    }
+  
+    .main-content {
+      height: calc(100vh - 40px); /* Adjust height for navbar height */
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Further reduce font size for mobile */
+    }
+  
+    .navbar {
+      flex-direction: column; /* Stack navbar links vertically on mobile */
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .navbar a {
+      font-size: 0.8rem; /* Further reduce font size for navigation links */
+      margin: 5px 0; /* Adjust margins for stacked layout */
+    }
+  
+    h1 {
+      font-size: 1.8rem; /* Further reduce heading size */
+      margin-bottom: 15px;
+    }
+  
+    .btn {
+      width: 100%; /* Make buttons take full width on mobile */
+      font-size: 0.85rem; /* Smaller button font size */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .main-content {
+      height: auto; /* Adjust height for better mobile scaling */
+      padding: 20px;
+    }
+  }
+
+ 

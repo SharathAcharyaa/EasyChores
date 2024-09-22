@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Submit to Google Sheet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Home.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Easy Chore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="rupee.html">Expense</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logout.html">Logout</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-4"> 
+    <h1>Easy Chore</h1> 
+    <div class="card mx-auto">
+      <div class="card-body"> 
+        <form name="submit-to-google-sheet" method="POST" enctype="multipart/form-data">  
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <select id="name" name="Name" class="form-control" required>
+              <option value="">Select Name</option>
+              <option value="Karan">Karan</option>
+              <option value="Abhishek">Abhishek</option>
+              <option value="Ishan Sharma">Ishan Sharma</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="chore" class="form-label">Chore</label>
+            <select id="chore" name="Chore" class="form-control" required>
+              <option value="">Select Chore</option>
+              <option value="Brooming">Brooming</option>
+              <option value="Kitchen Cleaning">Kitchen Cleaning</option>
+              <option value="Mopping">Mopping</option>
+              <option value="Bathroom Cleaning">Bathroom Cleaning</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input id="date" name="Date" type="date" class="form-control" required>
+          </div> 
+          <div class="mb-3"> 
+            <label for="trash" class="form-label">Trash Status</label>
+            <select id="trash" name="Trash" class="form-control" required>
+              <option value="">Select Trash Status</option>
+              <option value="Took Out">Took Out</option>
+              <option value="Washed">Washed</option> 
+              <option value="Took Out and Washed">Took Out and Washed</option>
+              <option value="Washed Both">Washed Both</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="remark" class="form-label">Remark</label>
+            <textarea id="remark" name="Remark" class="form-control" rows="3" placeholder="Add any remark"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="photo" class="form-label">Upload Photo (Optional)</label>
+            <input id="photo" name="Photo" type="file" class="form-control" accept="image/*">
+          </div>   
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form> 
+        <br>
+        <a href="https://docs.google.com/spreadsheets/d/1Lfj1S3UXGd57xRlv5RBnZzXWh1yqfJuXss8p9_NYldY/edit?gid=0#gid=0" class="btn btn-secondary" target="_blank">View Chore</a> 
+      </div>
+    </div> 
+  </div>  
+  <script src="home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body> 
+</html>
